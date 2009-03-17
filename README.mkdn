@@ -1,0 +1,58 @@
+# TenjinServer
+
+## What
+
+TenjinServer is a webserver to easy the template development process.
+Know more on [this anouncement][post].
+
+## Installing
+
+1. Install [Pytenjin][ptj] library
+2. Download tenjinserver.py (or clone this repository)
+3. Run tenjinserver.py from terminal.
+
+## Usage
+
+Start the server:
+
+    python tenjinserver.py <port> </path/to/template/files>
+
+Then access you template url from your browser:
+
+    http://localhost:8080/mytemplate.pyhtml
+
+## Options
+
+The default port is 8080.
+
+The default path is your current path. Path defines your DocumentRoot.
+
+Optionally you can set query params for complex templates:
+
+### Context Param
+
+  ex: http://localhost:8080/mytemplate.pyhtml?context=mycontext
+
+TenjinServer will load your template with mycontext.py as it's context.
+
+### Prefix Param
+
+  ex: http://localhost:8080/mytemplate.pyhtml?prefix=myprefix&context=mycontext
+
+If your template uses tenjin includes with the prefix notation, you must set the prefix param.
+
+## License
+
+This code is free to be used under the terms of the [MIT license][mit].
+
+## Authors
+
+[Henrique Bastos][hb]  
+[Vitor Mazzi][vm]
+
+[hb]:		http://henriquebastos.net
+[mit]:	http://www.opensource.org/licenses/mit-license.php
+[post]: http://henriquebastos.net/post/speed-up-pytenjin-template-creation-with-tenjin-server
+[ptj]:  http://www.kuwata-lab.com/tenjin/pytenjin-users-guide.html#installation
+[vm]:   http://vitormazzi.livejournal.com
+
