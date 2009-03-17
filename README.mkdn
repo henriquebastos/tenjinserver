@@ -3,7 +3,7 @@
 ## What
 
 TenjinServer is a webserver to easy the template development process.
-Know more on [this anouncement][post].
+Know more on [this post][post].
 
 ## Installing
 
